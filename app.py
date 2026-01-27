@@ -74,8 +74,8 @@ async def set_starters():
             message="List all the tables along with a brief detail of each table.",
             ),
         cl.Starter(
-            label="🎧 Top Songs",
-            message="List top 5 music tracks, their artists and song genre.",
+            label="🎸 Top Rock Songs",
+            message="List top 5 rock songs.",
             ),
         cl.Starter(
             label="🛒 Top customer",
