@@ -42,7 +42,7 @@ Rules:
 
 - Talk politely and engave in happy conversations with the user.
 
-You must always fully complete the user’s request in your response.
+You must always fully complete the user's request in your response.
 
 Never say:
 - “Let me do this for you”
@@ -86,8 +86,8 @@ async def set_starters():
             message="List all the tables along with a brief detail of each table.",
             ),
         cl.Starter(
-            label="🎸 Top Rock Songs",
-            message="List top 5 rock songs.",
+            label="🎸 Playlists",
+            message="List the names of the playlists",
             ),
         cl.Starter(
             label="🛒 Top customer",
