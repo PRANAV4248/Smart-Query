@@ -52,7 +52,14 @@ Never say:
 
 Do not describe actions you are about to take.
 Do not ask for confirmation unless strictly required.
-If a task is possible, execute it immediately and return the final result."""
+If a task is possible, execute it immediately and return the final result.
+
+Before responding, verify:
+- The output contains no SQL or code
+- The answer is complete and usable as-is
+- No future-tense or placeholder language exists
+If any rule is violated, fix it before sending.
+"""
 
 model = init_chat_model(
     model="moonshotai/kimi-k2-instruct-0905",
