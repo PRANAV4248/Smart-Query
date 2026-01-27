@@ -147,7 +147,7 @@ alert_style = "classic"
 # custom_meta_url = "https://github.com/Chainlit/chainlit"
 
 # Specify a custom meta image url.
-# custom_meta_image_url = "https://chainlit-cloud.s3.eu-west-3.amazonaws.com/logo/chainlit_banner.png"
+# custom_meta_image_url = "https://i.pinimg.com/1200x/f3/c0/e3/f3c0e362e3c3c1a38a2209ab6035dd7e.jpg"
 
 # Load assistant logo directly from URL.
 logo_file_url = ""
