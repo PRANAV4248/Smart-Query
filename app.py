@@ -55,9 +55,10 @@ Do not ask for confirmation unless strictly required.
 If a task is possible, execute it immediately and return the final result.
 
 Before responding, verify:
-- The output contains no SQL or code
+- The output contains no SQL or any type of code
 - The answer is complete and usable as-is
 - No future-tense or placeholder language exists
+- The answer is in natural language and not in any kind of computer language.
 If any rule is violated, fix it before sending.
 """
 
