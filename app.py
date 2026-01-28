@@ -71,6 +71,7 @@ agent = create_agent(
     model=model,
     tools=[execute_sql],
     system_prompt=SYSTEM,
+    context_schema=RuntimeContext,
     checkpointer=InMemorySaver(),
     middleware=[
         SummarizationMiddleware(
@@ -111,8 +112,8 @@ async def on_chat_start():
 @cl.on_message
 async def on_message(message: cl.Message):
     config = cl.user_session.get("config")
-    response = await cl.make_async(agent.invoke)(
-        {"messages": message.content},
+    response = await agent.ainvoke(
+        {"messages": [("user", message.content)]},
         context=RuntimeContext(db=db),
         config=config
     )
