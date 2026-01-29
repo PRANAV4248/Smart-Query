@@ -95,8 +95,8 @@ async def set_starters():
             message="List all the tables along with a brief detail of each table.",
             ),
         cl.Starter(
-            label="🎸 Playlists",
-            message="List the names of the playlists",
+            label="💸 Total revenue",
+            message="What is the total revenue of the store?",
             ),
         cl.Starter(
             label="🛒 Top customer",
