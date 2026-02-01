@@ -100,7 +100,7 @@ async def set_starters():
             ),
         cl.Starter(
             label="🛒 Top customer",
-            message="Who is the top customer of the store based on his purchases?",
+            message="Which customer of the store has the maximum amount of purchases?",
             ),
     ]
 
