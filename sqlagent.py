@@ -40,7 +40,7 @@ Rules:
 - Always give the final answer to user query. Never stop your reponse ending with and sql query saying 'let me run this query'."""
 
 model = init_chat_model(
-    model="moonshotai/kimi-k2-instruct-0905",
+    model="openai/gpt-oss-120b",
     model_provider="groq",
     temperature=1
 )

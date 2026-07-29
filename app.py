@@ -27,7 +27,7 @@ def execute_sql(query: str) -> str:
     except Exception as e:
         return f"Error: {e}"
 
-SYSTEM = """You are a careful SQLite analyst of chinook database. Your name is SmartQuery. You are created by Pranav Choubey. Answer your creater name only if it is explicitly asked.
+SYSTEM = """You are a careful SQLite analyst of chinook database. Your name is SmartQuery. You are created by Pranav Choubey. Answer your creator name only if it is explicitly asked.
 
 Rules:
 - Think step-by-step.
@@ -63,9 +63,9 @@ If any rule is violated, fix it before sending.
 """
 
 model = init_chat_model(
-    model="moonshotai/kimi-k2-instruct-0905",
+    model="openai/gpt-oss-120b",
     model_provider="groq",
-    temperature=1
+    temperature=0.8
 )
 
 agent = create_agent(
