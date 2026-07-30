@@ -10,7 +10,7 @@ from langchain.agents.middleware import SummarizationMiddleware
 
 load_dotenv()
 
-db = SQLDatabase.from_uri("sqlite:///notebooks/resources/Chinook.db")
+db = SQLDatabase.from_uri("sqlite:///analysis/resources/Chinook.db")
 
 @dataclass
 class RuntimeContext:
